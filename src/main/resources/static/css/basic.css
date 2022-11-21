@@ -1,5 +1,6 @@
 /* 버튼 디자인 (https://codepen.io/joebocock/pen/ZEWoMPb) */
 .fill {
+    margin: 16px;
     font-size: 16px;
     font-weight: 200;
     letter-spacing: 1px;
@@ -43,4 +44,19 @@ td, th {
 
 tr:nth-child(even) {
     background-color: #dddddd;
+}
+
+/* 폰트 */
+@font-face {
+    font-family: 'SDSamliphopangche_Basic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/SDSamliphopangche_Basic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 타이틀 */
+h1 {
+    text-align: center;
+    font-family: 'SDSamliphopangche_Basic';
+    margin-top: 32px;
 }

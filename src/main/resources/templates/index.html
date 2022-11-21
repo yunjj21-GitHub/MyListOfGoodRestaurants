@@ -11,15 +11,15 @@
 <body>
     <!-- 검색하기 -->
     <div style="text-align: center">
-        <h1 style="text-align: center">Searching for restaurants</h1>
+        <h1>Searching for restaurants</h1>
         검색할 식당 이름 : <input type = "text" id="nameOfRestaurantToSearchFor"/>
-        <button onclick="getRestaurantByName()" class="fill" style="margin: 16px">🔍</button><br>
+        <button onclick="getRestaurantByName()" class="fill">🔍</button><br>
     </div>
 
     <!-- Restaurants 리스트 -->
     <div style="text-align: center">
-        <h1 style="text-align: center">✨ My list of good restaurants ✨</h1>
-        <button onclick="getAllRestaurants()" style="color: #ffe54c; margin: 16px">🔄</button><br>
+        <h1>✨ My list of good restaurants ✨</h1>
+        <button onclick="getAllRestaurants()" style="background-color: #ffe54c">🔄</button><br>
         <table>
             <thead>
             <tr>
@@ -36,29 +36,29 @@
 
     <!-- 등록하기 -->
     <div style="text-align: center">
-        <h1 style="text-align: center">Registering a New Restaurant</h1>
+        <h1>Registering a New Restaurant</h1>
         이름 : <input type = "text" id = "nameForRegistering"/><br>
         주소 : <input type = "text" id = "addressForRegistering"/><br>
         별점 : <input type = "text" id = "starPointForRegistering"/><br>
         총 평 : <input type = "text" id = "comentForRegistering"/><br>
-        <button onclick="postRestaurant()" class="fill" style="margin: 16px">등록하기</button><br>
+        <button onclick="postRestaurant()" class="fill">등록하기</button><br>
     </div>
 
     <!-- 삭제하기 -->
     <div style="text-align: center">
-        <h1 style="text-align: center">Deleting a Restaurant</h1>
+        <h1>Deleting a Restaurant</h1>
         삭제할 식당 ID : <input type = "text" id="restaurantIdToDelete"/>
-        <button onclick="deleteRestaurantById()" class="fill" style="margin: 16px">삭제하기</button><br>
+        <button onclick="deleteRestaurantById()" class="fill">삭제하기</button><br>
     </div>
 
     <!-- 수정하기 -->
     <div style="text-align: center">
-        <h1 style="text-align: center">To change restaurant information</h1>
+        <h1>To change restaurant information</h1>
         이름 : <input type = "text" id = "nameForModifing"/><br>
         주소 : <input type = "text" id = "addressForModifing"/><br>
         별점 : <input type = "text" id = "starPointForModifing"/><br>
         총 평 : <input type = "text" id = "comentForModifing"/><br>
-        <button onclick="postRestauranById()" class="fill" style="margin: 16px">수정하기</button><br>
+        <button onclick="postRestauranById()" class="fill">수정하기</button><br>
     </div>
 </body>
 </html>
