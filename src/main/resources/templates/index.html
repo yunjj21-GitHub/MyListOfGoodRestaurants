@@ -5,15 +5,16 @@
     <title>My list of good restaurants</title>
 
     <!-- CSS와 Script 적용 -->
-    <link rel="stylesheet" href="static/css/basic.css" />
-    <script src="static/js/main.js"></script>
+    <link rel="stylesheet" href="static/css/ccccc.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <script src="static/js/jjjjj.js"></script>
 </head>
 <body>
     <!-- 검색하기 -->
     <div style="text-align: center">
         <h1>Searching for restaurants</h1>
         검색할 식당 이름 : <input type = "text" id="nameOfRestaurantToSearchFor"/>
-        <button onclick="getRestaurantByName()" class="fill">🔍</button><br>
+        <button onclick="getRestaurantsByName()" class="fill">🔍</button><br>
     </div>
 
     <!-- Restaurants 리스트 -->
@@ -26,11 +27,11 @@
                 <th>ID</th>
                 <th>이름</th>
                 <th>주소</th>
-                <th>별점</th>
+                <th>점수</th>
                 <th>총 평</th>
             </tr>
             </thead>
-            <tbody id = "ListOfRestaurants"></tbody>
+            <tbody id = "listOfRestaurants"></tbody>
         </table>
     </div>
 
@@ -54,11 +55,12 @@
     <!-- 수정하기 -->
     <div style="text-align: center">
         <h1>To change restaurant information</h1>
-        이름 : <input type = "text" id = "nameForModifing"/><br>
-        주소 : <input type = "text" id = "addressForModifing"/><br>
-        별점 : <input type = "text" id = "starPointForModifing"/><br>
-        총 평 : <input type = "text" id = "commentForModifing"/><br>
-        <button onclick="postRestauranById()" class="fill">수정하기</button><br>
+        정보를 수정할 식당의 ID : <input type = "text" id = "idForModifying"/><br>
+        이름 : <input type = "text" id = "nameForModifying"/><br>
+        주소 : <input type = "text" id = "addressForModifying"/><br>
+        별점 : <input type = "text" id = "starPointForModifying"/><br>
+        총 평 : <input type = "text" id = "commentForModifying"/><br>
+        <button onclick="putRestaurantById()" class="fill">수정하기</button><br>
     </div>
 </body>
 </html>
