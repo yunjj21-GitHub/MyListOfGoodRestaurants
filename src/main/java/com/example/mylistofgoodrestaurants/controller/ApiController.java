@@ -29,7 +29,6 @@ public class ApiController {
         myRepository.findAll().forEach(restaurant -> {
             restaurants.add(new Restaurant(restaurant.getId(), restaurant.getName(), restaurant.getAddress(), restaurant.getStarPoint(), restaurant.getComment()));
         });
-        System.out.println("★★★" + restaurants.get(0).getName() + " " + restaurants.get(1).getName() + " " + restaurants.get(2).getName() + "★★★");
         return restaurants; // Java 객체를 던지고 Json 객체로 받는다. (유의해야 할 것은 Json 객체를 받으면 Java 객체로 변환해야 한다.)
     }
 
